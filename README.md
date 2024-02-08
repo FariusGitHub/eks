@@ -535,7 +535,7 @@ that url above was given by EKS automatically as found in below DNS name found i
 
 ![](/09-image15.png)
 
-By running stress.sh and HPA.yaml
+By running test.sh and HPA.yaml
 ```txt
 kubectl apply -f HPA.yaml
 bash test.sh
