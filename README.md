@@ -547,7 +547,8 @@ we will see the pods increase rapidly
 ![](/09-image17.png)
 
 # SUMMARY
-Horizontal Autoscaling could be done within Multipass environment but not for regular Autoscaling. Cloud resource such as EKS would be necessary.
+Horizontal Autoscaling could be done within Multipass environment but not for regular Autoscaling. Cloud resource such as EKS would be necessary. <br>
+Herewith is a good [reference](https://www.youtube.com/watch?v=c-tsJrcB50I) for a simple HPA I tested on Docker-Desktop single node kubernetes cluster.
 
 For lightweight Kubernetes Cluster (K3s and Docker-Desktop single node K8S) they are commonly using HPA for load balancing. <br>
 
