@@ -535,7 +535,7 @@ that url above was given by EKS automatically as found in below DNS name found i
 
 ![](/09-image15.png)
 
-By running stress.sh and nginx.yaml again
+By running stress.sh and HPA.yaml
 ```txt
 kubectl apply -f HPA.yaml
 bash test.sh
@@ -549,4 +549,10 @@ we will see the pods increase rapidly
 # SUMMARY
 Horizontal Autoscaling could be done within Multipass environment but not for regular Autoscaling. Cloud resource such as EKS would be necessary.
 
-For lightweight Kubernetes Cluster (K3s and Docker-Desktop single node K8S) they are commonly using HPA for load balancing.
+For lightweight Kubernetes Cluster (K3s and Docker-Desktop single node K8S) they are commonly using HPA for load balancing. <br>
+
+You can do below to shutdown all the cluster
+```txt
+kubectl delete -f nginx.yaml
+eksctl delete cluster -f cluster.yaml
+```
