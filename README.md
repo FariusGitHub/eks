@@ -24,6 +24,9 @@ There are two ways to launch EKS cluster
 
 <br><br>
 
+Below EKS Cluster may need AWS VPC, Subnet and Security Group which I prefer to prepare them [separately](main.tf) from Terraform rather using my default resource.<br>
+By doing so, ater this cluster was shutdown I could easily turn off all these AWS resources easily (terraform destroy -auto-approve) needed to start this EKS cluster.
+
 ## eksctl create cluster
 To start and stop EKS cluster is a long process. It could take 15 minutes. Look at below exercise.
 
